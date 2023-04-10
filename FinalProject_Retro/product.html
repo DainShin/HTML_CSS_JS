@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="head">
+    <title>In's Game Product</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/custom-js.js" type="application/javascript"></script>
+    <script src="https://kit.fontawesome.com/8be9f1da93.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="logoArea" id="header"></header>
+    <main class="product_wrap">
+        <!--  title section -->
+        <section class="title_container">
+            <h1>Product</h1>
+        </section>
+        <!-- product_container -->
+        <!-- There are 5 products in total -->
+        <div class="product_container" id="products">
+          <section class="product_item_1">
+            <div class="product_image">
+              <img src="./image/img1.jpg" alt="img1">
+            </div>
+            <div class="details">
+              <p>Super Famicom RetroN 3 HD 3-in-1 </p>
+              <h3>Hyperkin/Mega Drive - Red</h3>
+              <p>Retro style red game console</p>
+              <p>$ 99.99</p>
+              <p>Free delivery in 5 days</p>
+              <div class="popup"> <!--- When the "order" button click, pop up order form  -->
+                <div class="overlay"></div>
+                <div class="message">
+                  <div class="ordernow">Order Now</div>
+                  <form action="submit_order.php" id="order-form-1" method="POST"> <!-- form tag for order form -->
+                    <div>
+                      <label for="name-1">Name</label>
+                      <input type="text" id="name-1" name="name" required>
+                    </div>
+                    <div>
+                      <label for="address-1">Add</label>
+                      <input type="text" id="address-1" name="address" required>
+                    </div>
+                    <div>
+                      <label for="phone-1">Phone</label>
+                      <input type="tel" id="phone-1" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div>
+                      <label for="email-1">Email</label>
+                      <input type="email" id="email-1" name="email" required>
+                    </div>
+                    <div class="submit_container">
+                      <button type="submit" form="order-form-1" class="submit" value="Submit Order">Submit Order</button>
+                    </div>
+                  </form>
+                </div>
+                <button class="open">Order</button>
+              </div>
+            </div>
+          </section>
+          <section class="product_item_2">
+            <div class="product_image"><img src="./image/img2.jpg" alt="img2"></div>
+            <div class="details">
+              <p>Retro-Bit Super Retro TRIO HD Plus </p>
+              <h3>Super Retro TRIO/Genesis Original</h3>
+              <p>Retro style red game console</p>
+              <p>$ 79.99</p>
+              <p>Free delivery in 5 days</p>
+              <div class="popup">
+                <div class="overlay"></div>
+                <div class="message">
+                  <div class="ordernow">Order Now</div>
+                  <form action="submit_order.php" id="order-form-2" method="POST">
+                    <div>
+                      <label for="name-2">Name</label>
+                      <input type="text" id="name-2" name="name" required>
+                    </div>
+                    <div>
+                      <label for="address-2">Add</label>
+                      <input type="text" id="address-2" name="address" required>
+                    </div>
+                    <div>
+                      <label for="phone-2">Phone</label>
+                      <input type="tel" id="phone-2" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div>
+                      <label for="email-2">Email</label>
+                      <input type="email" id="email-2" name="email" required>
+                    </div>
+                    <div class="submit_container">
+                      <button type="submit" form="order-form-2" class="submit" value="Submit Order">Submit Order</button>
+                    </div>
+                  </form>
+                </div>
+                <button class="open">Order</button>
+              </div>
+            </div>
+          </section>
+          <section class="product_item_3">
+            <div class="product_image"><img src="./image/img3.jpg" alt="img3"></div>
+            <div class="details">
+              <p>Super NES Classic Edition </p>
+              <h3>Nintendo/Super Fammicon NES Classic</h3>
+              <p>Retro style red game console</p>
+              <p>$ 129.99</p>
+              <p>Free delivery in 5 days</p>
+              <div class="popup">
+                <div class="overlay"></div>
+                <div class="message">
+                  <div class="ordernow">Order Now</div>
+                  <form action="submit_order.php" id="order-form-3" method="POST">
+                    <div>
+                      <label for="name-3">Name</label>
+                      <input type="text" id="name-3" name="name" required>
+                    </div>
+                    <div>
+                      <label for="address-3">Add</label>
+                      <input type="text" id="address-3" name="address" required>
+                    </div>
+                    <div>
+                      <label for="phone-3">Phone</label>
+                      <input type="tel" id="phone-3" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div>
+                      <label for="email-3">Email</label>
+                      <input type="email" id="email-3" name="email" required>
+                    </div>
+                    <div class="submit_container">
+                      <button type="submit" form="order-form-3" class="submit" value="Submit Order">Submit Order</button>
+                    </div>
+                  </form>
+                </div>
+                <button class="open">Order</button>
+              </div>
+            </div>
+          </section>
+          <section class="product_item_4">
+            <div class="product_image"><img src="./image/img4.jpg" alt="img4"></div>
+            <div class="details">
+              <p>Console Built-in Hundreds of Classic Old Video Games  </p>
+              <h3>DULEES/AV Outputs NES Console</h3>
+              <p>Retro style red game console</p>
+              <p>$ 99.00</p>
+              <p>Free delivery in 5 days</p>
+              <div class="popup">
+                <div class="overlay"></div>
+                <div class="message">
+                  <div class="ordernow">Order Now</div>
+                  <form action="submit_order.php" id="order-form-4" method="POST">
+                    <div>
+                      <label for="name-4">Name</label>
+                      <input type="text" id="name-4" name="name" required>
+                    </div>
+                    <div>
+                      <label for="address-4">Add</label>
+                      <input type="text" id="address-4" name="address" required>
+                    </div>
+                    <div>
+                      <label for="phone-4">Phone</label>
+                      <input type="tel" id="phone-4" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div>
+                      <label for="email-4">Email</label>
+                      <input type="email" id="email-4" name="email" required>
+                    </div>
+                    <div class="submit_container">
+                      <button type="submit" form="order-form-4" class="submit" value="Submit Order">Submit Order</button>
+                    </div>
+                  </form>
+                </div>
+                <button class="open">Order</button>
+              </div>
+            </div>
+          </section>
+          <section class="product_item_5">
+            <div class="product_image"><img src="./image/img5.jpg" alt="img5"></div>
+            <div class="details">
+              <p>Retro Game Console with 117,000+ Games </p>
+              <h3>KinHank/ For 4K HD TV</h3>
+              <p>Retro style red game console</p>
+              <p>$ 299.00</p>
+              <div class="popup">
+                <div class="overlay"></div>
+                <div class="message">
+                  <div class="ordernow">Order Now</div>
+                  <form action="submit_order.php" id="order-form-5" method="POST">
+                    <div>
+                      <label for="name-5">Name</label>
+                      <input type="text" id="name-5" name="name" required>
+                    </div>
+                    <div>
+                      <label for="address-5">Add</label>
+                      <input type="text" id="address-5" name="address" required>
+                    </div>
+                    <div>
+                      <label for="phone-5">Phone</label>
+                      <input type="tel" id="phone-5" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div>
+                      <label for="email-5">Email</label>
+                      <input type="email" id="email-5" name="email" required>
+                    </div>
+                    <div class="submit_container">
+                      <button type="submit" form="order-form-5" class="submit" value="Submit Order">Submit Order</button>
+                    </div>
+                  </form>
+                </div>
+                <button class="open">Order</button>
+              </div>
+            </div>
+          </section>
+        </div>
+    </main> <!-- wrap -->
+    <footer class="footer" id="footer"></footer>
+  </body>
+</html>
